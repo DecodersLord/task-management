@@ -17,6 +17,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from '@task-management/auth';
 import { Role } from '@task-management/data';
 import { Permissions } from '@task-management/data';
+import { RolePermissions } from '@task-management/data';
 
 @Module({
   imports: [
@@ -29,7 +30,7 @@ import { Permissions } from '@task-management/data';
       username: process.env.POSTGRES_USER || 'postgres',
       password: process.env.POSTGRES_PASSWORD || 'root',
       database: process.env.POSTGRES_DB || 'task-management',
-      entities: [User, Organization, Role, Permissions],
+      entities: [User, Organization, Role, Permissions, RolePermissions],
       synchronize: false,
       logging: true,
     }),

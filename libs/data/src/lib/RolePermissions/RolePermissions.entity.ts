@@ -7,7 +7,7 @@ export class RolePermissions {
   @PrimaryGeneratedColumn()
   id!: number;
 
-  @ManyToOne(() => Role, (role) => role.rolePermissions)
+  @ManyToOne(() => Role, (role) => role.permissions)
   @JoinColumn({ name: 'role_id' })
   role!: Role;
 

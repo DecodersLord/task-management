@@ -10,7 +10,7 @@ export class RoleService {
     private RoleRepository: Repository<Role>
   ) {}
 
-  create(data: { id: string; role_name: string; RolePermissions: string[] }) {
+  create(data: { id: string; role_name: string; rolePermissions: string[] }) {
     const organization = this.RoleRepository.create(data);
     return this.RoleRepository.save(organization);
   }

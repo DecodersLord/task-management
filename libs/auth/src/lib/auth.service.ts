@@ -42,7 +42,7 @@ export class AuthService {
   async login(user: User) {
     // Extract permissions from the user's role
     const permissions =
-      user.role?.permissions?.map((rp) => rp.permission_name) || [];
+      user.role?.permissions?.map((rp) => rp.permission.permission_name) || [];
 
     const payload = {
       sub: user.id,

@@ -25,3 +25,5 @@ export * from './lib/Permissions/permissions.service';
 export * from './lib/Permissions/permissions.controller';
 export * from './lib/Permissions/entities/permission.entity';
 export * from './lib/Permissions/dto/permission.dto';
+
+export * from './lib/RolePermissions/RolePermissions.entity';
