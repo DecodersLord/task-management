@@ -34,3 +34,9 @@ Due to time constraints and my limited knowledge working with NX monorepo, I was
 ### Access Control Flow
 
 ![Authorization Flow](./docs/sequence-diagram.png)
+
+### API Endpoints
+
+```
+
+```
