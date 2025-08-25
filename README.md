@@ -54,6 +54,8 @@ Response: {
 
 ```
 
+```
+
 POST api/tasks
 Content-Type: application/json
 Authorization: Bearer {token}
@@ -93,7 +95,5 @@ Authorization: Bearer {token}
 "updated_at": date,
 "completed_at": date
 }
-
-```
 
 ```
